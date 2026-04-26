@@ -1,0 +1,292 @@
+// Centralized bilingual copy. Spanish first.
+export const copy = {
+  nav: {
+    home: { es: "Inicio", en: "Home" },
+    project: { es: "Proyecto", en: "Project" },
+    research: { es: "Investigación", en: "Research" },
+    contact: { es: "Contacto", en: "Contact" },
+  },
+  brand: {
+    short: { es: "Estado Positivo", en: "Positive State" },
+    full: { es: "Proyecto Estado Positivo", en: "Positive State Project" },
+    tagline: {
+      es: "Hacia un Estado activista para la transición climática y la justicia social.",
+      en: "Towards an activist state for climate transition and social justice.",
+    },
+  },
+  home: {
+    eyebrow: { es: "Programa de investigación", en: "Research program" },
+    intro: {
+      es:
+        "El programa contribuye a la construcción de nuevas formas de gobernanza que mejoren el desempeño de los Estados activistas que experimentan con enfoques inéditos para orientar la economía hacia las transiciones climáticas y la justicia social — lo que llamamos el «Estado positivo».",
+      en:
+        "The program contributes to building new forms of governance that improve the performance of activist states experimenting with novel approaches to steer the economy towards climate transitions and social justice — what we call the “positive state.”",
+    },
+    ctaProject: { es: "Conoce el proyecto", en: "About the project" },
+    ctaSubstack: { es: "Lee nuestro Substack", en: "Read our Substack" },
+    goalsTitle: { es: "Dos objetivos", en: "Two goals" },
+    goalsKicker: {
+      es: "Investigación aplicada en México y diálogo global sobre la gobernanza post-neoliberal.",
+      en: "Applied research in Mexico and global dialogue on post-neoliberal governance.",
+    },
+    latest: { es: "Publicaciones recientes en Substack", en: "Latest from our Substack" },
+    viewAll: { es: "Ver todo", en: "View all" },
+  },
+  goals: {
+    a: {
+      label: { es: "Objetivo A", en: "Goal A" },
+      title: { es: "Reformas energéticas en México", en: "Mexico's energy sector reforms" },
+      body: {
+        es:
+          "Apoyar las reformas del sector energético en México mediante investigación aplicada, ayudando al gobierno a mejorar los medios para la planificación, el financiamiento de I+D y la innovación regulatoria.",
+        en:
+          "Support Mexico's energy sector reforms through applied research, aiding government in improving the means for planning, financing R&D, and regulatory innovation.",
+      },
+    },
+    b: {
+      label: { es: "Objetivo B", en: "Goal B" },
+      title: { es: "Debates globales post-neoliberales", en: "Global post-neoliberal debates" },
+      body: {
+        es:
+          "Modelar los debates y narrativas globales sobre la gobernanza post-neoliberal, fomentando el diálogo internacional sobre empresas estatales, regulación y participación pública, con énfasis en América Latina y, globalmente, a través del proceso de síntesis de evidencia del IPCC.",
+        en:
+          "Shape global debates and narratives on post-neoliberal governance, fostering international dialogue on state-owned enterprises, regulation, and public participation, with special emphasis on Latin America, but also globally through the IPCC evidence synthesis process.",
+      },
+    },
+  },
+  project: {
+    eyebrow: { es: "El proyecto", en: "The project" },
+    title: { es: "Reimaginar el Estado activista", en: "Reimagining the activist state" },
+    lede: {
+      es:
+        "Vivimos un momento de reordenamiento del papel del Estado en la economía. Frente a la urgencia climática y la deuda social acumulada, los Estados están experimentando con nuevas herramientas de planificación, financiamiento e intervención pública.",
+      en:
+        "We are living through a reordering of the state's role in the economy. Faced with climate urgency and accumulated social debt, states are experimenting with new tools of planning, financing, and public intervention.",
+    },
+    body1Title: { es: "Qué entendemos por «Estado positivo»", en: "What we mean by the “positive state”" },
+    body1: {
+      es:
+        "Llamamos Estado positivo a aquel que no se limita a corregir fallas del mercado, sino que orienta activamente la economía hacia objetivos públicos: descarbonización, soberanía tecnológica, equidad territorial y democratización del bienestar. Esto exige nuevas capacidades estatales — analíticas, financieras, regulatorias y deliberativas — y nuevas formas de coordinación con el sector privado, las comunidades y la academia.",
+      en:
+        "We call ‘positive state' the one that does not limit itself to correcting market failures, but actively steers the economy toward public goals: decarbonization, technological sovereignty, territorial equity, and the democratization of welfare. This demands new state capacities — analytical, financial, regulatory, and deliberative — and new forms of coordination with the private sector, communities, and academia.",
+    },
+    body2Title: { es: "Nuestro enfoque", en: "Our approach" },
+    body2: {
+      es:
+        "Combinamos investigación aplicada con incidencia en política pública. Trabajamos con instituciones gubernamentales mexicanas, redes latinoamericanas y procesos internacionales como el IPCC. Producimos evidencia, herramientas analíticas y espacios de diálogo que conectan la práctica de gobierno con los debates académicos contemporáneos.",
+      en:
+        "We combine applied research with policy engagement. We work with Mexican government institutions, Latin American networks, and international processes such as the IPCC. We produce evidence, analytical tools, and dialogue spaces that connect the practice of government with contemporary academic debates.",
+    },
+    teamTitle: { es: "Equipo", en: "Team" },
+    teamKicker: {
+      es: "Investigadores, asesores y colaboradores que sostienen el programa.",
+      en: "Researchers, advisors, and collaborators sustaining the program.",
+    },
+    partnersTitle: { es: "Afiliaciones y aliados", en: "Affiliations and partners" },
+  },
+  research: {
+    eyebrow: { es: "Investigación", en: "Research" },
+    title: { es: "Publicaciones y bitácora", en: "Publications & journal" },
+    lede: {
+      es:
+        "Documentos de trabajo, policy briefs y entradas de Substack que sintetizan nuestras investigaciones en curso.",
+      en:
+        "Working papers, policy briefs, and Substack entries synthesizing our ongoing research.",
+    },
+    pubsTitle: { es: "Publicaciones", en: "Publications" },
+    filterAll: { es: "Todas", en: "All" },
+    typePaper: { es: "Artículo", en: "Paper" },
+    typeBrief: { es: "Policy Brief", en: "Policy Brief" },
+    typeReport: { es: "Reporte", en: "Report" },
+    download: { es: "Descargar PDF", en: "Download PDF" },
+    substackTitle: { es: "Bitácora · Substack", en: "Journal · Substack" },
+    substackKicker: {
+      es: "Notas, ensayos y reflexiones sobre el Estado activista.",
+      en: "Notes, essays, and reflections on the activist state.",
+    },
+    visit: { es: "Visitar el Substack", en: "Visit the Substack" },
+    loading: { es: "Cargando publicaciones…", en: "Loading posts…" },
+    error: {
+      es: "No se pudieron cargar las publicaciones del Substack.",
+      en: "Could not load Substack posts.",
+    },
+    readMore: { es: "Leer más", en: "Read more" },
+  },
+  contact: {
+    eyebrow: { es: "Contacto", en: "Contact" },
+    title: { es: "Escríbenos", en: "Get in touch" },
+    lede: {
+      es:
+        "Para colaboraciones, prensa o consultas académicas, contáctanos por correo electrónico.",
+      en:
+        "For collaborations, press, or academic inquiries, please reach us by email.",
+    },
+    emailLabel: { es: "Correo institucional", en: "Institutional email" },
+    formTitle: { es: "Formulario", en: "Form" },
+    name: { es: "Nombre", en: "Name" },
+    email: { es: "Correo", en: "Email" },
+    affiliation: { es: "Afiliación (opcional)", en: "Affiliation (optional)" },
+    message: { es: "Mensaje", en: "Message" },
+    send: { es: "Abrir en mi cliente de correo", en: "Open in my mail client" },
+    follow: { es: "Síguenos", en: "Follow us" },
+  },
+  footer: {
+    copy: { es: "Proyecto Estado Positivo", en: "Positive State Project" },
+    rights: { es: "Todos los derechos reservados.", en: "All rights reserved." },
+  },
+  notFound: {
+    title: { es: "Página no encontrada", en: "Page not found" },
+    body: { es: "La página que buscas no existe.", en: "The page you're looking for doesn't exist." },
+    back: { es: "Volver al inicio", en: "Back to home" },
+  },
+};
+
+// Substack URL — placeholder. Replace with the real one.
+export const SUBSTACK_URL = "https://estadopositivo.substack.com";
+export const CONTACT_EMAIL = "contacto@estadopositivo.org";
+
+export const TEAM = [
+  {
+    name: "Dra. Adriana Mendoza",
+    role: { es: "Directora del programa", en: "Program director" },
+    bio: {
+      es: "Economista política, especialista en empresas estatales y planificación industrial.",
+      en: "Political economist, specialist in state-owned enterprises and industrial planning.",
+    },
+  },
+  {
+    name: "Dr. Iván Rosales",
+    role: { es: "Investigador senior · Energía", en: "Senior fellow · Energy" },
+    bio: {
+      es: "Investiga regulación, financiamiento y descarbonización del sector eléctrico mexicano.",
+      en: "Researches regulation, financing, and decarbonization of the Mexican power sector.",
+    },
+  },
+  {
+    name: "Dra. Camila Bustamante",
+    role: { es: "Investigadora · Gobernanza", en: "Research fellow · Governance" },
+    bio: {
+      es: "Trabaja sobre participación pública y diseño institucional en transiciones justas.",
+      en: "Works on public participation and institutional design in just transitions.",
+    },
+  },
+  {
+    name: "Dr. Javier Pineda",
+    role: { es: "Investigador · Síntesis IPCC", en: "Research fellow · IPCC synthesis" },
+    bio: {
+      es: "Coordina la contribución del programa a procesos de evidencia científica global.",
+      en: "Coordinates the program's contribution to global scientific evidence processes.",
+    },
+  },
+  {
+    name: "Mtra. Lucía Arrazola",
+    role: { es: "Coordinadora de incidencia", en: "Policy engagement lead" },
+    bio: {
+      es: "Vincula la investigación con dependencias gubernamentales y redes de la sociedad civil.",
+      en: "Connects research with government agencies and civil society networks.",
+    },
+  },
+  {
+    name: "Dr. Fernando Quiroz",
+    role: { es: "Asesor académico", en: "Academic advisor" },
+    bio: {
+      es: "Profesor afiliado; aporta perspectiva comparada sobre Estados desarrollistas.",
+      en: "Affiliated professor; brings a comparative perspective on developmental states.",
+    },
+  },
+];
+
+export const PARTNERS = [
+  "UNAM",
+  "El Colegio de México",
+  "CIDE",
+  "IIPP — UCL",
+  "CEPAL",
+  "IPCC WG III",
+];
+
+export type PubType = "paper" | "brief" | "report";
+
+export const PUBLICATIONS: Array<{
+  type: PubType;
+  year: number;
+  authors: string;
+  title: { es: string; en: string };
+  abstract: { es: string; en: string };
+}> = [
+  {
+    type: "paper",
+    year: 2025,
+    authors: "Mendoza, A.; Rosales, I.",
+    title: {
+      es: "Capacidades estatales para la transición energética en México",
+      en: "State capacities for the energy transition in Mexico",
+    },
+    abstract: {
+      es:
+        "Analizamos las capacidades analíticas y financieras requeridas para coordinar la transición eléctrica mexicana en un marco de soberanía energética.",
+      en:
+        "We analyze the analytical and financial capacities required to coordinate Mexico's electricity transition within a framework of energy sovereignty.",
+    },
+  },
+  {
+    type: "brief",
+    year: 2025,
+    authors: "Bustamante, C.",
+    title: {
+      es: "Participación pública en la planeación energética: lecciones latinoamericanas",
+      en: "Public participation in energy planning: lessons from Latin America",
+    },
+    abstract: {
+      es:
+        "Recomendaciones de diseño institucional para incorporar la voz ciudadana en la planeación de infraestructura.",
+      en:
+        "Institutional design recommendations to incorporate citizen voice in infrastructure planning.",
+    },
+  },
+  {
+    type: "report",
+    year: 2024,
+    authors: "Pineda, J.; Mendoza, A.",
+    title: {
+      es: "Empresas públicas y transición justa: una agenda de investigación",
+      en: "Public enterprises and just transition: a research agenda",
+    },
+    abstract: {
+      es:
+        "Mapeamos los debates contemporáneos sobre empresas estatales como instrumentos de transición y proponemos líneas de investigación.",
+      en:
+        "We map contemporary debates on state-owned enterprises as instruments of transition and propose research lines.",
+    },
+  },
+  {
+    type: "paper",
+    year: 2024,
+    authors: "Quiroz, F.",
+    title: {
+      es: "Del Estado regulador al Estado emprendedor: tres décadas de discusión",
+      en: "From the regulatory state to the entrepreneurial state: three decades of debate",
+    },
+    abstract: {
+      es:
+        "Una revisión crítica de la literatura sobre transformaciones del Estado en la economía global desde los años noventa.",
+      en:
+        "A critical review of literature on state transformations in the global economy since the 1990s.",
+    },
+  },
+  {
+    type: "brief",
+    year: 2024,
+    authors: "Arrazola, L.; Bustamante, C.",
+    title: {
+      es: "Innovación regulatoria para R&D en el sector eléctrico",
+      en: "Regulatory innovation for R&D in the power sector",
+    },
+    abstract: {
+      es:
+        "Propuestas concretas para mecanismos de financiamiento de investigación y desarrollo en empresas públicas.",
+      en:
+        "Concrete proposals for research and development financing mechanisms in public enterprises.",
+    },
+  },
+];
