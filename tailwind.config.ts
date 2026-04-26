@@ -19,6 +19,8 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        rule: "hsl(var(--rule))",
+        gold: "hsl(var(--gold))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -63,6 +65,10 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fontFamily: {
+        serif: ["'Cormorant Garamond'", "Iowan Old Style", "Georgia", "serif"],
+        sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+      },
       keyframes: {
         "accordion-down": {
           from: {
@@ -80,10 +86,21 @@ export default {
             height: "0",
           },
         },
+        "drift": {
+          "0%, 100%": { transform: "translate(0,0) rotate(0deg)" },
+          "50%": { transform: "translate(8px,-12px) rotate(2deg)" },
+        },
+        "fade-up": {
+          from: { opacity: "0", transform: "translateY(8px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "drift": "drift 14s ease-in-out infinite",
+        "drift-slow": "drift 22s ease-in-out infinite reverse",
+        "fade-up": "fade-up 0.6s ease-out both",
       },
     },
   },
