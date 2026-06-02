@@ -47,8 +47,7 @@ function stripHtml(html: string): string {
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
-    .trim()
-    .replace(/./, (c) => c); // no-op guard
+    .trim();
 }
 
 function firstImage(html: string): string | undefined {
