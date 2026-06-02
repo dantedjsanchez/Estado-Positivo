@@ -1,6 +1,6 @@
 // Fetch and parse a Substack RSS feed entirely client-side.
-// Substack feeds (https://<name>.substack.com/feed) include CORS headers in most cases.
-// If CORS fails, we transparently fall back to a public read-only proxy.
+// Substack feeds (https://<name>.substack.com/feed) include CORS headers in some cases.
+// If CORS fails, we transparently fall back to public read-only proxies.
 
 export type SubstackPost = {
   title: string;
@@ -55,26 +55,64 @@ function parseFeed(xml: string): SubstackPost[] {
   });
 }
 
+async function fetchWithTimeout(input: RequestInfo, init?: RequestInit & { timeout?: number }): Promise<Response> {
+  const { timeout = 8000, ...rest } = init ?? {};
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+  try {
+    const res = await fetch(input, { ...rest, signal: controller.signal });
+    return res;
+  } finally {
+    clearTimeout(id);
+  }
+}
+
+async function tryFetch(url: string): Promise<SubstackPost[] | undefined> {
+  try {
+    const res = await fetchWithTimeout(url, { timeout: 6000 });
+    if (!res.ok) return undefined;
+    const text = await res.text();
+    const posts = parseFeed(text);
+    return posts.length ? posts : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+async function tryProxy(url: string, proxyUrl: string): Promise<SubstackPost[] | undefined> {
+  try {
+    const res = await fetchWithTimeout(proxyUrl, { timeout: 10000 });
+    if (!res.ok) return undefined;
+    // Some proxies wrap the body in JSON { contents: "..." }, others return raw XML
+    const ct = res.headers.get("content-type") ?? "";
+    if (ct.includes("application/json")) {
+      const data = (await res.json()) as { contents?: string };
+      if (!data.contents) return undefined;
+      const posts = parseFeed(data.contents);
+      return posts.length ? posts : undefined;
+    }
+    const text = await res.text();
+    const posts = parseFeed(text);
+    return posts.length ? posts : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 export async function fetchSubstack(feedUrl: string): Promise<SubstackPost[]> {
   const url = feedUrl.replace(/\/$/, "") + "/feed";
 
-  // Try direct first.
-  try {
-    const res = await fetch(url);
-    if (res.ok) {
-      const text = await res.text();
-      const posts = parseFeed(text);
-      if (posts.length) return posts;
-    }
-  } catch {
-    // fall through to proxy
-  }
+  // 1. Direct fetch (works when Substack sends CORS headers)
+  const direct = await tryFetch(url);
+  if (direct) return direct;
 
-  // CORS fallback: AllOrigins (free, no key) returns the raw body wrapped in JSON.
-  const proxied = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
-  const res = await fetch(proxied);
-  if (!res.ok) throw new Error(`Failed to fetch Substack feed (${res.status})`);
-  const data = (await res.json()) as { contents?: string };
-  if (!data.contents) throw new Error("Empty feed response");
-  return parseFeed(data.contents);
+  // 2. corsproxy.io (returns raw body)
+  const proxy1 = await tryProxy(url, `https://corsproxy.io/?${encodeURIComponent(url)}`);
+  if (proxy1) return proxy1;
+
+  // 3. allorigins (returns JSON { contents })
+  const proxy2 = await tryProxy(url, `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
+  if (proxy2) return proxy2;
+
+  throw new Error("Failed to fetch Substack feed from all sources");
 }
