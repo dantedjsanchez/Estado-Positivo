@@ -12,11 +12,33 @@ export type SubstackPost = {
   creator?: string;
 };
 
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
+  hellip: "…", mdash: "—", ndash: "–", laquo: "«", raquo: "»",
+  iquest: "¿", iexcl: "¡", ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’",
+  aacute: "á", eacute: "é", iacute: "í", oacute: "ó", uacute: "ú",
+  Aacute: "Á", Eacute: "É", Iacute: "Í", Oacute: "Ó", Uacute: "Ú",
+  ntilde: "ñ", Ntilde: "Ñ", uuml: "ü", Uuml: "Ü",
+};
+
+function decodeEntities(input: string): string {
+  if (!input) return input;
+  return input
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => {
+      try { return String.fromCodePoint(parseInt(h, 16)); } catch { return _; }
+    })
+    .replace(/&#(\d+);/g, (_, n) => {
+      try { return String.fromCodePoint(parseInt(n, 10)); } catch { return _; }
+    })
+    .replace(/&([a-zA-Z]+);/g, (m, name) => NAMED_ENTITIES[name] ?? m);
+}
+
 function pickTag(xml: string, tag: string): string | undefined {
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i");
   const m = xml.match(re);
   if (!m) return undefined;
-  return m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
+  const unwrapped = m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
+  return decodeEntities(unwrapped);
 }
 
 function stripHtml(html: string): string {
@@ -24,19 +46,13 @@ function stripHtml(html: string): string {
     .replace(/<style[\s\S]*?<\/style>/gi, "")
     .replace(/<script[\s\S]*?<\/script>/gi, "")
     .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
     .replace(/\s+/g, " ")
     .trim();
 }
 
 function firstImage(html: string): string | undefined {
   const m = html.match(/<img[^>]+src=["']([^"']+)["']/i);
-  return m?.[1];
+  return m?.[1] ? decodeEntities(m[1]) : undefined;
 }
 
 function parseFeed(xml: string): SubstackPost[] {
