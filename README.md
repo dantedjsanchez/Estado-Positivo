@@ -8,6 +8,7 @@ Este repositorio contiene el código fuente del prototipo de la página web (des
 
 ## Integración con Substack:
 El feed vivo de substack utiliza una integración **RSS a JSON** para mantener el contenido actualizado automáticamente, sin necesidad de mantenimiento manual ni APIs cerradas. Más información la siguiente liga: https://www.osborndesign.works/guide/how-to-embed-a-substack-feed-on-any-website 
+El blog de substack del proyecto es: https://estadopositivo.substack.com
 
 ## Contacto:
 **Dante D.J. Sánchez** - djsramirez@colmex.mx
