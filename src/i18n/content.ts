@@ -95,7 +95,7 @@ export const copy = {
     },
     pubsTitle: { es: "Publicaciones", en: "Publications" },
     filterAll: { es: "Todas", en: "All" },
-    typePaper: { es: "NOTA DE INVESTIGACIÓN", en: "Research Note" },
+    typePaper: { es: "Artículo", en: "Paper" },
     typeBrief: { es: "Nota de investigación", en: "Research Note" },
     typeReport: { es: "Reporte", en: "Report" },
     download: { es: "Descargar PDF", en: "Download PDF" },
@@ -178,7 +178,7 @@ export const PUBLICATIONS: Array<{
   abstract: { es: string; en: string };
 }> = [
   {
-    type: "paper",
+    type: "brief",
     year: 2026,
     authors: "Dante D.J. Sánchez, Junio 2026.",
     title: {
