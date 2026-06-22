@@ -166,7 +166,7 @@ export const TEAM = [
   },
 ];
 
-export const PARTNERS = ["UNAM", "—", "—", "—"];
+export const PARTNERS = ["COLMEX", "IPCC", "—", "—"];
 
 export type PubType = "paper" | "brief" | "report";
 
