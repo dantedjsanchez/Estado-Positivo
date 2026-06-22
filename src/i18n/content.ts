@@ -147,9 +147,12 @@ export const CONTACT_EMAIL = "contacto@estadopositivo.org";
 
 export const TEAM = [
   {
-    name: "",
-    role: { es: "", en: "" },
-    bio: { es: "", en: "" },
+    name: "Dra. Adriana Mendoza",
+    role: { es: "Directora del programa", en: "Program director" },
+    bio: {
+      es: "Economista política, especialista en empresas estatales y planificación industrial.",
+      en: "Political economist, specialist in state-owned enterprises and industrial planning.",
+    },
   },
   {
     name: "",
@@ -163,7 +166,7 @@ export const TEAM = [
   },
 ];
 
-export const PARTNERS = ["—", "—", "—", "—"];
+export const PARTNERS = ["UNAM", "—", "—", "—"];
 
 export type PubType = "paper" | "brief" | "report";
 
@@ -176,10 +179,18 @@ export const PUBLICATIONS: Array<{
 }> = [
   {
     type: "paper",
-    year: 0,
-    authors: "",
-    title: { es: "", en: "" },
-    abstract: { es: "", en: "" },
+    year: 2025,
+    authors: "Mendoza, A.; Rosales, I.",
+    title: {
+      es: "Capacidades estatales para la transición energética en México",
+      en: "State capacities for the energy transition in Mexico",
+    },
+    abstract: {
+      es:
+        "Analizamos las capacidades analíticas y financieras requeridas para coordinar la transición eléctrica mexicana en un marco de soberanía energética.",
+      en:
+        "We analyze the analytical and financial capacities required to coordinate Mexico's electricity transition within a framework of energy sovereignty.",
+    },
   },
   {
     type: "paper",
