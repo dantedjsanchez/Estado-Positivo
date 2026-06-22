@@ -59,9 +59,9 @@ export const copy = {
     title: { es: "Reimaginar el Estado activista", en: "Reimagining the activist state" },
     lede: {
       es:
-        "Vivimos un momento de reordenamiento del papel del Estado en la economía. Frente a la urgencia climática, el reordenamiento geopolítico y la deuda social acumulada, los Estados están experimentando con nuevas herramientas de planificación, financiamiento e intervención pública para impulsar la descarbonización y el desarrollo.",
+        "Vivimos un momento de reordenamiento del papel del Estado en la economía. Frente a la urgencia climática, el cambio geopolítico y la deuda social acumulada, los Estados están experimentando con nuevas herramientas de planificación, financiamiento e intervención pública para impulsar la descarbonización, la justicia y el desarrollo.",
       en:
-        "We are living through a reordering of the state's role in the economy. Faced with climate urgency, geopolitical reordering, and accumulated social debt, states are experimenting with new tools of planning, financing, and public intervention to drive decarbonization and development.",
+        "We are living through a reordering of the state's role in the economy. Faced with climate urgency, geopolitical change, and accumulated social debt, states are experimenting with new tools of planning, financing, and public intervention to drive decarbonization, justice, and development.",
     },
     body1Title: { es: "Qué entendemos por «Estado positivo»", en: "What we mean by the “positive state”" },
     body1: {
