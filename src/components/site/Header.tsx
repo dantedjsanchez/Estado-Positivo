@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { useLang, t } from "@/i18n/LangProvider";
 import { copy } from "@/i18n/content";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/logo.svg.asset.json";
 
 const items = [
   { to: "/", key: "home" as const },
@@ -20,9 +21,11 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="container-prose flex h-16 items-center justify-between gap-6">
         <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
-          <span className="grid place-items-center h-9 w-9 rounded-sm bg-primary text-primary-foreground font-serif text-lg leading-none">
-            E<span className="text-accent">+</span>
-          </span>
+          <img
+            src={logoAsset.url}
+            alt={t(lang, copy.brand.full)}
+            className="h-10 w-10 rounded-sm"
+          />
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="font-serif text-lg text-foreground">{t(lang, copy.brand.short)}</span>
             <span className="smallcaps text-muted-foreground">Proyecto</span>
