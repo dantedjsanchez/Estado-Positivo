@@ -95,8 +95,8 @@ export const copy = {
     },
     pubsTitle: { es: "Publicaciones", en: "Publications" },
     filterAll: { es: "Todas", en: "All" },
-    typePaper: { es: "Artículo", en: "Paper" },
-    typeBrief: { es: "Policy Brief", en: "Policy Brief" },
+    typePaper: { es: "NOTA DE INVESTIGACIÓN", en: "Research Note" },
+    typeBrief: { es: "Nota de investigación", en: "Research Note" },
     typeReport: { es: "Reporte", en: "Report" },
     download: { es: "Descargar PDF", en: "Download PDF" },
     substackTitle: { es: "Bitácora · Substack", en: "Journal · Substack" },
@@ -179,17 +179,17 @@ export const PUBLICATIONS: Array<{
 }> = [
   {
     type: "paper",
-    year: 2025,
-    authors: "Mendoza, A.; Rosales, I.",
+    year: 2026,
+    authors: "Dante D.J. Sánchez, Junio 2026.",
     title: {
-      es: "Capacidades estatales para la transición energética en México",
-      en: "State capacities for the energy transition in Mexico",
+      es: "Participación pública en la planeación energética",
+      en: "Public participation in energy planning",
     },
     abstract: {
       es:
-        "Analizamos las capacidades analíticas y financieras requeridas para coordinar la transición eléctrica mexicana en un marco de soberanía energética.",
+        "Esta nota analiza las formas y lógicas de la participación pública en la planeación energética a partir de un análisis comparativo de seis países.",
       en:
-        "We analyze the analytical and financial capacities required to coordinate Mexico's electricity transition within a framework of energy sovereignty.",
+        "This note analyzes the forms and logics of public participation in energy planning based on a comparative analysis of six countries.",
     },
   },
   {
