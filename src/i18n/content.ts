@@ -147,11 +147,11 @@ export const CONTACT_EMAIL = "contacto@estadopositivo.org";
 
 export const TEAM = [
   {
-    name: "Dra. Adriana Mendoza",
-    role: { es: "Directora del programa", en: "Program director" },
+    name: "Dr. José María Valenzuela",
+    role: { es: "LÍDER DE PROYECTO", en: "PROJECT LEADER" },
     bio: {
-      es: "Economista política, especialista en empresas estatales y planificación industrial.",
-      en: "Political economist, specialist in state-owned enterprises and industrial planning.",
+      es: "Profesor Investigador (CEI, COLMEX). Se especializa en economía política internacional y comparada y trabaja sobre gobernanza energética, intervencionismo estatal y estudios regulatorios.",
+      en: "Research Professor (CEI, COLMEX). He specializes in international and comparative political economy and works on energy governance, state interventionism, and regulatory studies.",
     },
   },
   {
