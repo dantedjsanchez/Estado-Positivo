@@ -59,8 +59,8 @@ export default function Research() {
             {items.map((p, i) => (
               <li key={i} className="grid gap-4 md:grid-cols-12 py-7 group">
                 <div className="md:col-span-2 flex md:flex-col gap-3 md:gap-1 items-baseline">
-                  <span className="font-serif text-3xl text-accent leading-none">{p.year}</span>
-                  <span className="smallcaps text-muted-foreground">{typeLabel(p.type)}</span>
+                  <span className="font-serif text-3xl text-accent leading-none">{p.year > 0 ? p.year : "—"}</span>
+                  <span className="smallcaps text-muted-foreground">{p.authors ? typeLabel(p.type) : "—"}</span>
                 </div>
                 <div className="md:col-span-8">
                   <h3 className="font-serif text-2xl leading-snug text-foreground group-hover:text-accent transition-colors">

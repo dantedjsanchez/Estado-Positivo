@@ -147,63 +147,23 @@ export const CONTACT_EMAIL = "contacto@estadopositivo.org";
 
 export const TEAM = [
   {
-    name: "Dra. Adriana Mendoza",
-    role: { es: "Directora del programa", en: "Program director" },
-    bio: {
-      es: "Economista política, especialista en empresas estatales y planificación industrial.",
-      en: "Political economist, specialist in state-owned enterprises and industrial planning.",
-    },
+    name: "",
+    role: { es: "", en: "" },
+    bio: { es: "", en: "" },
   },
   {
-    name: "Dr. Iván Rosales",
-    role: { es: "Investigador senior · Energía", en: "Senior fellow · Energy" },
-    bio: {
-      es: "Investiga regulación, financiamiento y descarbonización del sector eléctrico mexicano.",
-      en: "Researches regulation, financing, and decarbonization of the Mexican power sector.",
-    },
+    name: "",
+    role: { es: "", en: "" },
+    bio: { es: "", en: "" },
   },
   {
-    name: "Dra. Camila Bustamante",
-    role: { es: "Investigadora · Gobernanza", en: "Research fellow · Governance" },
-    bio: {
-      es: "Trabaja sobre participación pública y diseño institucional en transiciones justas.",
-      en: "Works on public participation and institutional design in just transitions.",
-    },
-  },
-  {
-    name: "Dr. Javier Pineda",
-    role: { es: "Investigador · Síntesis IPCC", en: "Research fellow · IPCC synthesis" },
-    bio: {
-      es: "Coordina la contribución del programa a procesos de evidencia científica global.",
-      en: "Coordinates the program's contribution to global scientific evidence processes.",
-    },
-  },
-  {
-    name: "Mtra. Lucía Arrazola",
-    role: { es: "Coordinadora de incidencia", en: "Policy engagement lead" },
-    bio: {
-      es: "Vincula la investigación con dependencias gubernamentales y redes de la sociedad civil.",
-      en: "Connects research with government agencies and civil society networks.",
-    },
-  },
-  {
-    name: "Dr. Fernando Quiroz",
-    role: { es: "Asesor académico", en: "Academic advisor" },
-    bio: {
-      es: "Profesor afiliado; aporta perspectiva comparada sobre Estados desarrollistas.",
-      en: "Affiliated professor; brings a comparative perspective on developmental states.",
-    },
+    name: "",
+    role: { es: "", en: "" },
+    bio: { es: "", en: "" },
   },
 ];
 
-export const PARTNERS = [
-  "UNAM",
-  "El Colegio de México",
-  "CIDE",
-  "IIPP — UCL",
-  "CEPAL",
-  "IPCC WG III",
-];
+export const PARTNERS = ["—", "—", "—", "—"];
 
 export type PubType = "paper" | "brief" | "report";
 
@@ -216,77 +176,23 @@ export const PUBLICATIONS: Array<{
 }> = [
   {
     type: "paper",
-    year: 2025,
-    authors: "Mendoza, A.; Rosales, I.",
-    title: {
-      es: "Capacidades estatales para la transición energética en México",
-      en: "State capacities for the energy transition in Mexico",
-    },
-    abstract: {
-      es:
-        "Analizamos las capacidades analíticas y financieras requeridas para coordinar la transición eléctrica mexicana en un marco de soberanía energética.",
-      en:
-        "We analyze the analytical and financial capacities required to coordinate Mexico's electricity transition within a framework of energy sovereignty.",
-    },
-  },
-  {
-    type: "brief",
-    year: 2025,
-    authors: "Bustamante, C.",
-    title: {
-      es: "Participación pública en la planeación energética: lecciones latinoamericanas",
-      en: "Public participation in energy planning: lessons from Latin America",
-    },
-    abstract: {
-      es:
-        "Recomendaciones de diseño institucional para incorporar la voz ciudadana en la planeación de infraestructura.",
-      en:
-        "Institutional design recommendations to incorporate citizen voice in infrastructure planning.",
-    },
-  },
-  {
-    type: "report",
-    year: 2024,
-    authors: "Pineda, J.; Mendoza, A.",
-    title: {
-      es: "Empresas públicas y transición justa: una agenda de investigación",
-      en: "Public enterprises and just transition: a research agenda",
-    },
-    abstract: {
-      es:
-        "Mapeamos los debates contemporáneos sobre empresas estatales como instrumentos de transición y proponemos líneas de investigación.",
-      en:
-        "We map contemporary debates on state-owned enterprises as instruments of transition and propose research lines.",
-    },
+    year: 0,
+    authors: "",
+    title: { es: "", en: "" },
+    abstract: { es: "", en: "" },
   },
   {
     type: "paper",
-    year: 2024,
-    authors: "Quiroz, F.",
-    title: {
-      es: "Del Estado regulador al Estado emprendedor: tres décadas de discusión",
-      en: "From the regulatory state to the entrepreneurial state: three decades of debate",
-    },
-    abstract: {
-      es:
-        "Una revisión crítica de la literatura sobre transformaciones del Estado en la economía global desde los años noventa.",
-      en:
-        "A critical review of literature on state transformations in the global economy since the 1990s.",
-    },
+    year: 0,
+    authors: "",
+    title: { es: "", en: "" },
+    abstract: { es: "", en: "" },
   },
   {
-    type: "brief",
-    year: 2024,
-    authors: "Arrazola, L.; Bustamante, C.",
-    title: {
-      es: "Innovación regulatoria para R&D en el sector eléctrico",
-      en: "Regulatory innovation for R&D in the power sector",
-    },
-    abstract: {
-      es:
-        "Propuestas concretas para mecanismos de financiamiento de investigación y desarrollo en empresas públicas.",
-      en:
-        "Concrete proposals for research and development financing mechanisms in public enterprises.",
-    },
+    type: "paper",
+    year: 0,
+    authors: "",
+    title: { es: "", en: "" },
+    abstract: { es: "", en: "" },
   },
 ];
