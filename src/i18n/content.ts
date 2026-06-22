@@ -59,16 +59,16 @@ export const copy = {
     title: { es: "Reimaginar el Estado activista", en: "Reimagining the activist state" },
     lede: {
       es:
-        "Vivimos un momento de reordenamiento del papel del Estado en la economía. Frente a la urgencia climática y la deuda social acumulada, los Estados están experimentando con nuevas herramientas de planificación, financiamiento e intervención pública.",
+        "Vivimos un momento de reordenamiento del papel del Estado en la economía. Frente a la urgencia climática, el reordenamiento geopolítico y la deuda social acumulada, los Estados están experimentando con nuevas herramientas de planificación, financiamiento e intervención pública para impulsar la descarbonización y el desarrollo.",
       en:
-        "We are living through a reordering of the state's role in the economy. Faced with climate urgency and accumulated social debt, states are experimenting with new tools of planning, financing, and public intervention.",
+        "We are living through a reordering of the state's role in the economy. Faced with climate urgency, geopolitical reordering, and accumulated social debt, states are experimenting with new tools of planning, financing, and public intervention to drive decarbonization and development.",
     },
     body1Title: { es: "Qué entendemos por «Estado positivo»", en: "What we mean by the “positive state”" },
     body1: {
       es:
-        "Llamamos Estado positivo a aquel que no se limita a corregir fallas del mercado, sino que orienta activamente la economía hacia objetivos públicos: descarbonización, soberanía tecnológica, equidad territorial y democratización del bienestar. Esto exige nuevas capacidades estatales — analíticas, financieras, regulatorias y deliberativas — y nuevas formas de coordinación con el sector privado, las comunidades y la academia.",
+        "Llamamos Estado positivo a aquel que no se limita a corregir fallas del mercado, sino que orienta activamente la economía hacia objetivos públicos. Esto exige nuevas capacidades estatales —analíticas, financieras, regulatorias y deliberativas— y nuevas formas de coordinación con el sector privado, las comunidades y la academia.",
       en:
-        "We call ‘positive state' the one that does not limit itself to correcting market failures, but actively steers the economy toward public goals: decarbonization, technological sovereignty, territorial equity, and the democratization of welfare. This demands new state capacities — analytical, financial, regulatory, and deliberative — and new forms of coordination with the private sector, communities, and academia.",
+        "We call ‘positive state' the one that does not limit itself to correcting market failures, but actively steers the economy toward public goals. This demands new state capacities —analytical, financial, regulatory, and deliberative— and new forms of coordination with the private sector, communities, and academia.",
     },
     body2Title: { es: "Nuestro enfoque", en: "Our approach" },
     body2: {
