@@ -78,9 +78,10 @@ export default function Project() {
                 <div className="aspect-[4/5] bg-gradient-to-br from-primary/10 to-accent/10 rounded-sm mb-4 grid place-items-center font-serif text-5xl text-primary/40 select-none">
                   {m.name
                     .split(" ")
+                    .filter((s) => !s.match(/^(Dr|Dra)\.?$/i))
                     .map((s) => s[0])
                     .filter((c) => /[A-ZÁÉÍÓÚÑ]/.test(c))
-                    .slice(0, 2)
+                    .slice(0, 3)
                     .join("")}
                 </div>
                 <h3 className="font-serif text-xl text-foreground">{m.name}</h3>
