@@ -143,7 +143,7 @@ export const copy = {
 
 // Substack URL — placeholder. Replace with the real one.
 export const SUBSTACK_URL = "https://estadopositivo.substack.com";
-export const CONTACT_EMAIL = "contacto@estadopositivo.org";
+export const CONTACT_EMAIL = "contacto@estadopositivo";
 
 export const TEAM = [
   {
