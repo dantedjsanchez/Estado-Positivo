@@ -79,8 +79,8 @@ export const copy = {
     },
     teamTitle: { es: "Equipo", en: "Team" },
     teamKicker: {
-      es: "Investigadores, asesores y colaboradores que sostienen el programa.",
-      en: "Researchers, advisors, and collaborators sustaining the program.",
+      es: "Investigadores y colaboradores que sostienen el programa.",
+      en: "Researchers and collaborators sustaining the program.",
     },
     partnersTitle: { es: "Afiliaciones y aliados", en: "Affiliations and partners" },
   },
