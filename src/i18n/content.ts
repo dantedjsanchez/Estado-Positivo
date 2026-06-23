@@ -10,8 +10,8 @@ export const copy = {
     short: { es: "Estado Positivo", en: "Positive State" },
     full: { es: "Proyecto Estado Positivo", en: "Positive State Project" },
     tagline: {
-      es: "Hacia un Estado activista para la transición climática y la justicia social.",
-      en: "Towards an activist state for climate transition and social justice.",
+      es: "Hacia un Estado activista para la transición energética, el desarrollo y la justicia ambiental.",
+      en: "Towards an activist state for energy transition, development and environmental justice.",
     },
   },
   home: {
